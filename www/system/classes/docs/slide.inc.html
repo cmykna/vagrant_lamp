@@ -1,0 +1,306 @@
+<!DOCTYPE html>  <html> <head>   <title>slide.inc.php</title>   <meta http-equiv="content-type" content="text/html; charset=UTF-8">   <link rel="stylesheet" media="all" href="docco.css" /> </head> <body>   <div id="container">     <div id="background"></div>            <div id="jump_to">         Jump To &hellip;         <div id="jump_wrapper">           <div id="jump_page">                                           <a class="source" href="buckets.inc-011212.html">                 buckets.inc-011212.php               </a>                                           <a class="source" href="buckets.inc-120111.html">                 buckets.inc-120111.php               </a>                                           <a class="source" href="buckets.inc.html">                 buckets.inc.php               </a>                                           <a class="source" href="coda.inc-110311.html">                 coda.inc-110311.php               </a>                                           <a class="source" href="coda.inc.html">                 coda.inc.php               </a>                                           <a class="source" href="coverflow.inc-120511.html">                 coverflow.inc-120511.php               </a>                                           <a class="source" href="coverflow.inc.html">                 coverflow.inc.php               </a>                                           <a class="source" href="cryptastic.inc.html">                 cryptastic.inc.php               </a>                                           <a class="source" href="elements.inc-113011.html">                 elements.inc-113011.php               </a>                                           <a class="source" href="elements.inc.html">                 elements.inc.php               </a>                                           <a class="source" href="form.inc.html">                 form.inc.php               </a>                                           <a class="source" href="index.html">                 index.php               </a>                                           <a class="source" href="menus.inc-041212.html">                 menus.inc-041212.php               </a>                                           <a class="source" href="menus.inc-120611.html">                 menus.inc-120611.php               </a>                                           <a class="source" href="menus.inc.html">                 menus.inc.php               </a>                                           <a class="source" href="page.inc-110211.html">                 page.inc-110211.php               </a>                                           <a class="source" href="page.inc.html">                 page.inc.php               </a>                                           <a class="source" href="product.inc.html">                 product.inc.php               </a>                                           <a class="source" href="settings.inc-110311.html">                 settings.inc-110311.php               </a>                                           <a class="source" href="settings.inc.html">                 settings.inc.php               </a>                                           <a class="source" href="slide.inc-110311.html">                 slide.inc-110311.php               </a>                                           <a class="source" href="slide.inc.html">                 slide.inc.php               </a>                        </div>         </div>       </div>          <table cellpadding="0" cellspacing="0">       <thead>         <tr>           <th class="docs">             <h1>               slide.inc.php             </h1>           </th>           <th class="code">           </th>         </tr>       </thead>       <tbody>                               <tr id="section-1">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-1">&#182;</a>               </div>                            </td>             <td class="code">               <div class="highlight"><pre><span class="cp">&lt;?php</span>
+<span class="sd">/**</span>
+<span class="sd"> * Microsite Slide Class</span>
+<span class="sd"> *</span>
+<span class="sd"> * @author HMH Web Team</span>
+<span class="sd"> * @author Bryan Schultz bryan.schultz@hmhpub.com</span>
+<span class="sd"> * @author Terence Bodola terence.bodola@hmhpub.com</span>
+<span class="sd"> * @author Kyle Crawford kyle.crawford@hmhpub.com</span>
+<span class="sd"> * @author Seth Cardoza seth.cardoza@hmhpub.com</span>
+<span class="sd"> * @author Chris Cykana christopher.cykana@hmhpub.com</span>
+<span class="sd"> *</span>
+<span class="sd"> * @copyright Copyright (c) 1995-2011 Houghton Mifflin Harcourt. All rights reserved.</span>
+<span class="sd"> *</span>
+<span class="sd"> *</span>
+<span class="sd"> * @package Microsite System Templates</span>
+<span class="sd"> * @subpackage System/Classes</span>
+<span class="sd"> * @since Microsite 2.0.0</span>
+<span class="sd"> * @version 3.0.0 (honeybadger)</span>
+<span class="sd"> */</span>
+ 
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  This class contains all the methods needed to construct slides for the</span>
+<span class="cm"> *  coda slider</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Include Generalized Global functions</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm">*/</span>
+  <span class="k">require_once</span> <span class="nx">__FUNCT__</span><span class="o">.</span><span class="s2">&quot;/general.inc.php&quot;</span><span class="p">;</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  CLASS SLIDE</span>
+<span class="cm"> *  DEFAULT SETTINGS FOR METHODS ARE LOCATED AT</span>
+<span class="cm"> *  system/application/localIncludes/slide.php</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm">*/</span>
+<span class="k">class</span> <span class="nc">Slide</span>
+<span class="p">{</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  START METHODS</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm">*/</span>  </pre></div>             </td>           </tr>                               <tr id="section-2">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-2">&#182;</a>               </div>               <p>Set the version number for the class
+All classes should have this</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="k">protected</span> <span class="nv">$version</span> <span class="o">=</span> <span class="s2">&quot;Microsite Slide Version 3.0.0&quot;</span><span class="p">;</span></pre></div>             </td>           </tr>                               <tr id="section-3">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-3">&#182;</a>               </div>               <p>Return the version of the class</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="k">private</span> <span class="k">function</span> <span class="nf">_getVersion</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">version</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">private</span> <span class="nv">$slideAlign</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+  <span class="k">private</span> <span class="nv">$slideImage</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+  <span class="k">private</span> <span class="nv">$slideHeadline</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+  <span class="k">private</span> <span class="nv">$slideBodyCopy</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+  <span class="k">private</span> <span class="nv">$slideButton</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">__call</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">&quot;Missing method called : </span><span class="si">$name</span><span class="s2">, &quot;</span><span class="o">.</span><span class="nb">implode</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">,</span> <span class="nv">$args</span><span class="p">);</span>
+  <span class="p">}</span>
+  
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  ERROR REPORTING</span>
+<span class="cm"> *  @method: errorReport($bool)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $bool</span>
+<span class="cm"> *  @param mixed $bool</span>
+<span class="cm"> *  @var boolean params: false, FALSE, 0</span>
+<span class="cm"> *  @var boolean params: true , TRUE , 1</span>
+<span class="cm"> *  @var default param: 0</span>
+<span class="cm"> *</span>
+<span class="cm"> *  NOT REQUIRED</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">errorReport</span><span class="p">(</span><span class="nv">$bool</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$input</span> <span class="o">=</span> <span class="nx">booleanCheck</span><span class="p">(</span><span class="nv">$bool</span><span class="p">);</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">reporter</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$input</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="nv">$input</span> <span class="o">:</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">reporter</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">?</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_generateReport</span><span class="p">()</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  THIS IS THE CONFIGURATION AREA FOR SLIDE SPECIFIC VARIABLES</span>
+<span class="cm"> *  CONTAINS THE OBJECT METHODS</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  WHAT SIDE OF THE SLIDE DO YOU WANT TO ALIGN THE TEXT</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @method: slideAlign($str, $id)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $str</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *  @var string params: NULL, &#39;right&#39;, &#39;left&#39;</span>
+<span class="cm"> *  @var default param: NULL</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $id</span>
+<span class="cm"> *  @param string $id</span>
+<span class="cm"> *  @var default param: NULL</span>
+<span class="cm"> *</span>
+<span class="cm"> *  REQUIRED</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">slideAlign</span><span class="p">(</span><span class="nv">$str</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$id</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$array</span>  <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="s2">&quot;left&quot;</span><span class="p">,</span> <span class="s2">&quot;right&quot;</span><span class="p">);</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideAlignment</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$str</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">((</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$str</span><span class="p">,</span> <span class="nv">$array</span><span class="p">,</span> <span class="k">true</span><span class="p">))</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">copy-block-&quot;</span><span class="o">.</span><span class="nv">$str</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">copy-block</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">copy-block</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">id</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$id</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; id=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$id</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideAlign</span><span class="p">[]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nb">sprintf</span><span class="p">(</span><span class="s2">&quot;&lt;div%s%s&gt;&quot;</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideAlignment</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideAlign</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  @method: slideImage($file, $alt)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $file</span>
+<span class="cm"> *  @param string $file</span>
+<span class="cm"> *  @var file param: &#39;/directory/to/image.ext&#39;</span>
+<span class="cm"> *  @var default param: &#39;/system/assets/images/blank.png&#39;</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $alt</span>
+<span class="cm"> *  @param string $alt</span>
+<span class="cm"> *  @var limitation: 5-10 Words max (175 characters max) 65 Characters (Including Spaces)</span>
+<span class="cm"> *  @var default param: NULL</span>
+<span class="cm"> *</span>
+<span class="cm"> *  REQUIRED</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">slideImage</span><span class="p">(</span><span class="nv">$file</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$alt</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideImageFile</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$file</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">stripHTTP</span><span class="p">(</span><span class="nv">$file</span><span class="p">)</span> <span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">__S_IMAGES__</span><span class="o">.</span><span class="s2">&quot;/blank.png&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideImageAlt</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$alt</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; alt=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$alt</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2"> &quot;</span> <span class="o">:</span> <span class="s2">&quot; alt=</span><span class="se">\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideImage</span><span class="p">[]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nb">sprintf</span><span class="p">(</span><span class="s2">&quot;&lt;img src=</span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2"> class=</span><span class="se">\&quot;</span><span class="s2">slide-image</span><span class="se">\&quot;</span><span class="s2">%s&gt;&quot;</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideImageFile</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideImageAlt</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideImage</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  @method: slideHeadLine($str, $class)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $str</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *  @var default param: &#39;Keep HeadLine 1 to 35 Characters Max&#39;</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $class</span>
+<span class="cm"> *  @param string $class</span>
+<span class="cm"> *  @var default param: NULL</span>
+<span class="cm"> *</span>
+<span class="cm"> *  REQUIRED</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">slideHeadLine</span><span class="p">(</span><span class="nv">$str</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$class</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideHeadLineStr</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$str</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$str</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideHeadLineClass</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$class</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$class</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideHeadline</span><span class="p">[]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nb">sprintf</span><span class="p">(</span><span class="s2">&quot;&lt;h2%s&gt;%s&lt;/h2&gt;&quot;</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideHeadLineClass</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideHeadLineStr</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideHeadline</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  @method: slideBodyCopy($str, $class)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $str</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *  @var default param: &#39;Body text goes here. Keep all text concise - </span>
+<span class="cm"> *  250 characters max.&#39;</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $class</span>
+<span class="cm"> *  @param string $class</span>
+<span class="cm"> *  @var default param: NULL</span>
+<span class="cm"> *</span>
+<span class="cm"> *  REQUIRED</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">slideBodyCopy</span><span class="p">(</span><span class="nv">$str</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$class</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideBodyCopyStr</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$str</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$str</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideBodyCopyClass</span>  <span class="o">=</span> <span class="p">(</span><span class="nv">$class</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$class</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideBodyCopy</span><span class="p">[]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nb">sprintf</span><span class="p">(</span><span class="s2">&quot;&lt;p%s&gt;%s&lt;/p&gt;&quot;</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideBodyCopyClass</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideBodyCopyStr</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideBodyCopy</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  @method: slideButton($str, $href, $class, $gaLinkTrack, $external)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $str</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *  @var default param: &#39;Learn More&#39;</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $href</span>
+<span class="cm"> *  @param string $href</span>
+<span class="cm"> *  @var default param: #</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $class</span>
+<span class="cm"> *  @param string $class</span>
+<span class="cm"> *  @var string params: &#39;slide-button&#39;, &#39;slide-button-alt&#39;</span>
+<span class="cm"> *  @var default param: &#39;slide-button&#39;</span>
+<span class="cm"> * </span>
+<span class="cm"> *  @var $gaLinkTrack</span>
+<span class="cm"> *  @param function $gaLinkTrack</span>
+<span class="cm"> *  @var string params: function</span>
+<span class="cm"> *  @var default param: NULL</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $external</span>
+<span class="cm"> *  @param mixed $external</span>
+<span class="cm"> *  @var boolean params: false, FALSE, 0</span>
+<span class="cm"> *  @var boolean params: true , TRUE , 1</span>
+<span class="cm"> *  @var default param: 0</span>
+<span class="cm"> *</span>
+<span class="cm"> *  NOT REQUIRED</span>
+<span class="cm"> *  ORDER NUMBER 5</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">slideButton</span><span class="p">(</span><span class="nv">$str</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$href</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$class</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$gaLinkTrack</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$external</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButtonStr</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$str</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$str</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButtonLink</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$href</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">stripHTTP</span><span class="p">(</span><span class="nv">$href</span><span class="p">)</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButtonClass</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$class</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$class</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2"> &quot;</span> <span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">button</span><span class="se">\&quot;</span><span class="s2"> &quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">gaLinkTrack</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$gaLinkTrack</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;onclick=</span><span class="se">\&quot;</span><span class="s2">recordOutboundLink(this, &#39;Outbound Links&#39;, &#39;&quot;</span><span class="o">.</span><span class="nv">$gaLinkTrack</span><span class="o">.</span><span class="s2">&quot;&#39;);return false;</span><span class="se">\&quot;</span><span class="s2"> &quot;</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">external</span> <span class="o">=</span> <span class="p">(</span><span class="nb">is_string</span><span class="p">(</span><span class="nv">$external</span><span class="p">))</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$external</span> <span class="o">:</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="nx">booleanCheck</span><span class="p">(</span><span class="nv">$external</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">external</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">||</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">external</span> <span class="o">==</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rel</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; &quot;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">external</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rel</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; rel=</span><span class="se">\&quot;</span><span class="s2">external</span><span class="se">\&quot;</span><span class="s2"> &quot;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rel</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; rel=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">external</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2"> &quot;</span><span class="p">;</span>  
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">gaLinkTrack</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButton</span><span class="p">[]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nb">sprintf</span><span class="p">(</span><span class="s2">&quot;&lt;a%s%s%shref=</span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2">&gt;%s&lt;/a&gt;&quot;</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rel</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButtonClass</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">gaLinkTrack</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButtonLink</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButtonStr</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nv">$str</span> <span class="o">==</span> <span class="k">NULL</span> <span class="o">&amp;&amp;</span> <span class="nv">$href</span> <span class="o">==</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span></pre></div>             </td>           </tr>                               <tr id="section-4">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-4">&#182;</a>               </div>               <p>$this->slideButtonStr = "";
+$this->slideButtonLink = ""; 
+$this->slideButtonClass = ""; 
+$this->slideButton[] = (string) sprintf("%s%s%s", $this->slideButtonClass, $this->slideButtonLink, $this->slideButtonStr);</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButton</span><span class="p">[]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;&amp;nbsp;&quot;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButton</span><span class="p">[]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nb">sprintf</span><span class="p">(</span><span class="s2">&quot;&lt;a%s%shref=</span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2">&gt;%s&lt;/a&gt;&quot;</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rel</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButtonClass</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButtonLink</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButtonStr</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButton</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  Method for building out the slides on the page</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">codaBuild</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_build</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  PRIVATE METHODS</span>
+<span class="cm">*/</span>
+  <span class="k">private</span> <span class="k">function</span> <span class="nf">_build</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nv">$i</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// offset default slide</span>
+    <span class="nv">$slideImgCount</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideImage</span><span class="p">);</span>
+    <span class="nv">$slideHeadlineCount</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideHeadline</span><span class="p">);</span>
+    <span class="nv">$slideBodyCopyCount</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideBodyCopy</span><span class="p">);</span>
+    <span class="nv">$slideButtonCount</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButton</span><span class="p">);</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span>  <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t</span><span class="s2">&lt;div id=</span><span class="se">\&quot;</span><span class="s2">coda-slider-wrapper</span><span class="se">\&quot;</span><span class="s2">&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t</span><span class="s2">&lt;div class=</span><span class="se">\&quot;</span><span class="s2">coda-slider preload</span><span class="se">\&quot;</span><span class="s2"> id=</span><span class="se">\&quot;</span><span class="s2">coda-slider</span><span class="se">\&quot;</span><span class="s2">&gt;&quot;</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nv">$slideImgCount</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t</span><span class="s2">&lt;div class=</span><span class="se">\&quot;</span><span class="s2">panel</span><span class="se">\&quot;</span><span class="s2">&gt;&quot;</span><span class="p">;</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t</span><span class="s2">&lt;div class=</span><span class="se">\&quot;</span><span class="s2">panel-wrapper</span><span class="se">\&quot;</span><span class="s2">&gt;&quot;</span><span class="p">;</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t\t</span><span class="s2">&lt;div class=</span><span class="se">\&quot;</span><span class="s2">slide-container</span><span class="se">\&quot;</span><span class="s2">&gt;&quot;</span><span class="p">;</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t\t\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideAlign</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+      <span class="k">if</span><span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$toReplace</span> <span class="o">=</span> <span class="s2">&quot;h2&gt;&quot;</span><span class="p">;</span>
+        <span class="nv">$replaceWith</span> <span class="o">=</span> <span class="s2">&quot;h1&gt;&quot;</span><span class="p">;</span>
+        <span class="nv">$swap</span> <span class="o">.=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="nv">$toReplace</span><span class="p">,</span> <span class="nv">$replaceWith</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideHeadline</span><span class="p">[</span><span class="nv">$i</span><span class="p">]);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t\t\t\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$swap</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t\t\t\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideHeadline</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+      <span class="p">}</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t\t\t\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideBodyCopy</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t\t\t\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButton</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t\t\t</span><span class="s2">&lt;/div&gt;&quot;</span><span class="p">;</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t\t\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideImage</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t\t</span><span class="s2">&lt;/div&gt;&quot;</span><span class="p">;</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t\t</span><span class="s2">&lt;/div&gt;&quot;</span><span class="p">;</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t</span><span class="s2">&lt;/div&gt;&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t</span><span class="s2">&lt;/div&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t</span><span class="s2">&lt;/div&gt;</span><span class="se">\r\n</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">codaBuild</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">private</span> <span class="k">function</span> <span class="nf">_generateReport</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nv">$i</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// offset default slide</span>
+    
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideAlign</span> <span class="k">as</span> <span class="nv">$k</span> <span class="o">=&gt;</span> <span class="nv">$v</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$slideAlign</span> <span class="o">.=</span> <span class="p">(</span><span class="nv">$k</span> <span class="o">&gt;=</span> <span class="nv">$i</span><span class="p">)</span> <span class="o">?</span> <span class="s2">&quot;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nb">ltrim</span><span class="p">(</span><span class="nv">$v</span><span class="p">))</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;&quot;</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideHeadline</span> <span class="k">as</span> <span class="nv">$k</span> <span class="o">=&gt;</span> <span class="nv">$v</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$slideHeadline</span> <span class="o">.=</span> <span class="p">(</span><span class="nv">$k</span> <span class="o">&gt;=</span> <span class="nv">$i</span><span class="p">)</span> <span class="o">?</span> <span class="s2">&quot;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nb">ltrim</span><span class="p">(</span><span class="nv">$v</span><span class="p">))</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;&quot;</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideBodyCopy</span> <span class="k">as</span> <span class="nv">$k</span> <span class="o">=&gt;</span> <span class="nv">$v</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$slideBodyCopy</span><span class="o">.=</span> <span class="p">(</span><span class="nv">$k</span> <span class="o">&gt;=</span> <span class="nv">$i</span><span class="p">)</span> <span class="o">?</span> <span class="s2">&quot;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nb">ltrim</span><span class="p">(</span><span class="nv">$v</span><span class="p">))</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;&quot;</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="p">}</span> 
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideButton</span> <span class="k">as</span> <span class="nv">$k</span> <span class="o">=&gt;</span> <span class="nv">$v</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$slideButton</span> <span class="o">.=</span> <span class="p">(</span><span class="nv">$k</span> <span class="o">&gt;=</span> <span class="nv">$i</span><span class="p">)</span> <span class="o">?</span> <span class="s2">&quot;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nb">ltrim</span><span class="p">(</span><span class="nv">$v</span><span class="p">))</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;&quot;</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slideImage</span> <span class="k">as</span> <span class="nv">$k</span> <span class="o">=&gt;</span> <span class="nv">$v</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$slideImage</span> <span class="o">.=</span> <span class="p">(</span><span class="nv">$k</span> <span class="o">&gt;=</span> <span class="nv">$i</span><span class="p">)</span> <span class="o">?</span> <span class="s2">&quot;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nb">ltrim</span><span class="p">(</span><span class="nv">$v</span><span class="p">))</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;&quot;</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nb">unset</span><span class="p">(</span><span class="nv">$v</span><span class="p">);</span>
+    
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">report</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t</span><span class="s2">&lt;h1&gt;&lt;em&gt;&lt;em&gt;Slide Values&lt;/em&gt;&lt;/em&gt;&lt;/h1&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">report</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t</span><span class="s2">&lt;ul&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">report</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t</span><span class="s2">&lt;li&gt;&lt;em&gt;&lt;em&gt;Version:&lt;/em&gt;&lt;/em&gt; &quot;</span><span class="o">.</span><span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nb">ltrim</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">version</span><span class="p">))</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">report</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t</span><span class="s2">&lt;li&gt;&lt;em&gt;&lt;em&gt;slideAlign:&lt;/em&gt;&lt;/em&gt; &lt;ol&gt;&quot;</span><span class="o">.</span><span class="nv">$slideAlign</span><span class="o">.</span><span class="s2">&quot;&lt;/ol&gt;&lt;/li&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">report</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t</span><span class="s2">&lt;li&gt;&lt;em&gt;&lt;em&gt;slideHeadline:&lt;/em&gt;&lt;/em&gt; &lt;ol&gt;&quot;</span><span class="o">.</span><span class="nv">$slideHeadline</span><span class="o">.</span><span class="s2">&quot;&lt;/ol&gt;&lt;/li&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">report</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t</span><span class="s2">&lt;li&gt;&lt;em&gt;&lt;em&gt;slideBodyCopy:&lt;/em&gt;&lt;/em&gt; &lt;ol&gt;&quot;</span><span class="o">.</span><span class="nv">$slideBodyCopy</span><span class="o">.</span><span class="s2">&quot;&lt;/ol&gt;&lt;/li&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">report</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t</span><span class="s2">&lt;li&gt;&lt;em&gt;&lt;em&gt;slideButton:&lt;/em&gt;&lt;/em&gt; &lt;ol&gt;&quot;</span><span class="o">.</span><span class="nv">$slideButton</span><span class="o">.</span><span class="s2">&quot;&lt;/ol&gt;&lt;/li&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">report</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t</span><span class="s2">&lt;li&gt;&lt;em&gt;&lt;em&gt;slideImage:&lt;/em&gt;&lt;/em&gt; &lt;ol&gt;&quot;</span><span class="o">.</span><span class="nv">$slideImage</span><span class="o">.</span><span class="s2">&quot;&lt;/ol&gt;&lt;/li&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">report</span> <span class="o">.=</span>  <span class="s2">&quot;</span><span class="se">\r\n\t\t\t</span><span class="s2">&lt;/ul&gt;&quot;</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">report</span><span class="p">;</span>     
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  END METHODS</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm">*/</span>
+<span class="p">}</span>
+<span class="cm">/* End of file slide.inc.php */</span>
+<span class="cm">/* Location: system/classes/slide.inc.php */</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+
+</pre></div>             </td>           </tr>                </tbody>     </table>   </div> </body> </html> 

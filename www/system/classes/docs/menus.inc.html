@@ -1,0 +1,423 @@
+<!DOCTYPE html>  <html> <head>   <title>menus.inc.php</title>   <meta http-equiv="content-type" content="text/html; charset=UTF-8">   <link rel="stylesheet" media="all" href="docco.css" /> </head> <body>   <div id="container">     <div id="background"></div>            <div id="jump_to">         Jump To &hellip;         <div id="jump_wrapper">           <div id="jump_page">                                           <a class="source" href="buckets.inc-011212.html">                 buckets.inc-011212.php               </a>                                           <a class="source" href="buckets.inc-120111.html">                 buckets.inc-120111.php               </a>                                           <a class="source" href="buckets.inc.html">                 buckets.inc.php               </a>                                           <a class="source" href="coda.inc-110311.html">                 coda.inc-110311.php               </a>                                           <a class="source" href="coda.inc.html">                 coda.inc.php               </a>                                           <a class="source" href="coverflow.inc-120511.html">                 coverflow.inc-120511.php               </a>                                           <a class="source" href="coverflow.inc.html">                 coverflow.inc.php               </a>                                           <a class="source" href="cryptastic.inc.html">                 cryptastic.inc.php               </a>                                           <a class="source" href="elements.inc-113011.html">                 elements.inc-113011.php               </a>                                           <a class="source" href="elements.inc.html">                 elements.inc.php               </a>                                           <a class="source" href="form.inc.html">                 form.inc.php               </a>                                           <a class="source" href="index.html">                 index.php               </a>                                           <a class="source" href="menus.inc-041212.html">                 menus.inc-041212.php               </a>                                           <a class="source" href="menus.inc-120611.html">                 menus.inc-120611.php               </a>                                           <a class="source" href="menus.inc.html">                 menus.inc.php               </a>                                           <a class="source" href="page.inc-110211.html">                 page.inc-110211.php               </a>                                           <a class="source" href="page.inc.html">                 page.inc.php               </a>                                           <a class="source" href="product.inc.html">                 product.inc.php               </a>                                           <a class="source" href="settings.inc-110311.html">                 settings.inc-110311.php               </a>                                           <a class="source" href="settings.inc.html">                 settings.inc.php               </a>                                           <a class="source" href="slide.inc-110311.html">                 slide.inc-110311.php               </a>                                           <a class="source" href="slide.inc.html">                 slide.inc.php               </a>                        </div>         </div>       </div>          <table cellpadding="0" cellspacing="0">       <thead>         <tr>           <th class="docs">             <h1>               menus.inc.php             </h1>           </th>           <th class="code">           </th>         </tr>       </thead>       <tbody>                               <tr id="section-1">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-1">&#182;</a>               </div>                            </td>             <td class="code">               <div class="highlight"><pre><span class="cp">&lt;?php</span>
+<span class="sd">/**</span>
+<span class="sd"> * Microsite Menus Class</span>
+<span class="sd"> *</span>
+<span class="sd"> * @author HMH Web Team</span>
+<span class="sd"> * @author Bryan Schultz bryan.schultz@hmhpub.com</span>
+<span class="sd"> * @author Terence Bodola terence.bodola@hmhpub.com</span>
+<span class="sd"> * @author Kyle Crawford kyle.crawford@hmhpub.com</span>
+<span class="sd"> * @author Seth Cardoza seth.cardoza@hmhpub.com</span>
+<span class="sd"> * @author Chris Cykana christopher.cykana@hmhpub.com</span>
+<span class="sd"> *</span>
+<span class="sd"> * @copyright Copyright (c) 1995-2011 Houghton Mifflin Harcourt. All rights reserved.</span>
+<span class="sd"> *</span>
+<span class="sd"> *</span>
+<span class="sd"> * @package Microsite System Templates</span>
+<span class="sd"> * @subpackage System/Classes</span>
+<span class="sd"> * @since Microsite 2.0.0</span>
+<span class="sd"> * @version 3.0.0 (honeybadger)</span>
+<span class="sd"> */</span>
+
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  This class contains all the methods needed to construct a local menus file</span>
+<span class="cm"> *  for a microsite.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Include Generalized Global functions</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm">*/</span>
+  <span class="k">require_once</span> <span class="nx">__FUNCT__</span><span class="o">.</span><span class="s2">&quot;/general.inc.php&quot;</span><span class="p">;</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  CLASS MENU</span>
+<span class="cm"> *  DEFAULT SETTINGS FOR METHODS ARE LOCATED AT</span>
+<span class="cm"> *  system/application/localIncludes/menu.php</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm">*/</span>
+<span class="k">class</span> <span class="nc">Menu</span>
+<span class="p">{</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">__call</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">&quot;Missing method called : </span><span class="si">$name</span><span class="s2">, &quot;</span><span class="o">.</span><span class="nb">implode</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">,</span> <span class="nv">$args</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  START METHODS</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm">*/</span></pre></div>             </td>           </tr>                               <tr id="section-2">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-2">&#182;</a>               </div>               <p>Setup the arrays needed by this class</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="k">private</span> <span class="nv">$topNavLink</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+  <span class="k">private</span> <span class="nv">$topNavSocialLink</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span></pre></div>             </td>           </tr>                               <tr id="section-3">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-3">&#182;</a>               </div>               <p>Setting this guy to public temporarily for access to 
+nav items.</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="k">public</span> <span class="nv">$leftNavItem</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+  <span class="k">protected</span> <span class="nv">$menuStyle</span><span class="p">;</span>
+
+  <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nv">$menuStyle</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">menuStyle</span> <span class="o">=</span> <span class="nv">$menuStyle</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  TOP NAV METHODS</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm">*/</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  @method: topNavLink($str, $href, $class, $external, $gaLinkTrack)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $str</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $href</span>
+<span class="cm"> *  @param string $href</span>
+<span class="cm"> *  @var default param: #</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $class</span>
+<span class="cm"> *  @param string $class</span>
+<span class="cm"> *  @var default param: &#39;right-split&#39;</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $external</span>
+<span class="cm"> *  @param boolean $external</span>
+<span class="cm"> *  @var boolean params: false, FALSE, 0</span>
+<span class="cm"> *  @var boolean params: true , TRUE , 1</span>
+<span class="cm"> *  @var default param: 0</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $gaLinkTrack</span>
+<span class="cm"> *  @param string $gaLinkTrack</span>
+<span class="cm"> *  @var default param: NULL</span>
+<span class="cm"> *</span>
+<span class="cm"> *  REQUIRED</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">topNavLink</span><span class="p">(</span><span class="nv">$str</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$href</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$class</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$external</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$gaLinkTrack</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$str</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$str</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s2">&quot;/\bBuy Now\b/i&quot;</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span><span class="p">))</span> <span class="p">{</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;&lt;img src=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nx">__S_BUTTONS__</span><span class="o">.</span><span class="s2">&quot;/buy-now.png</span><span class="se">\&quot;</span><span class="s2"> alt=</span><span class="se">\&quot;</span><span class="s2">Buy Now</span><span class="se">\&quot;</span><span class="s2">&gt;&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkHref</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$href</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">stripHTTP</span><span class="p">(</span><span class="nv">$href</span><span class="p">)</span> <span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;#&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">gaLinkTrack</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$gaLinkTrack</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; onclick=</span><span class="se">\&quot;</span><span class="s2">recordOutboundLink(this, &#39;Outbound Links&#39;, &#39;&quot;</span><span class="o">.</span><span class="nv">$gaLinkTrack</span><span class="o">.</span><span class="s2">&quot;&#39;);return false;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">:</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">external</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="nx">booleanCheck</span><span class="p">(</span><span class="nv">$external</span><span class="p">);</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rel</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">external</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; rel=</span><span class="se">\&quot;</span><span class="s2">external</span><span class="se">\&quot;</span><span class="s2"> &quot;</span> <span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; &quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkClass</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$class</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$class</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">right-split</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavLink</span><span class="p">[]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nb">sprintf</span><span class="p">(</span><span class="s2">&quot;&lt;li%s&gt;&lt;a%s class=</span><span class="se">\&quot;</span><span class="s2">buy-now</span><span class="se">\&quot;</span><span class="s2"> href=</span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2">%s&gt;%s&lt;/a&gt;&lt;/li&gt;&quot;</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkClass</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">gaLinkTrack</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkHref</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rel</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavLink</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  @method: topNavSocialLink($str, $href, $class)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $str</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $href</span>
+<span class="cm"> *  @param string $href</span>
+<span class="cm"> *  @var default param: #</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $class</span>
+<span class="cm"> *  @param string $class</span>
+<span class="cm"> *  @var default param: &#39;social-network&#39;</span>
+<span class="cm"> *</span>
+<span class="cm"> *  DEPRICATED</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">topNavSocialLink</span><span class="p">(</span><span class="nv">$type</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$href</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$class</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">strtolower</span><span class="p">(</span><span class="nv">$type</span><span class="p">);</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkHref</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">stripHTTP</span><span class="p">(</span><span class="nv">$href</span><span class="p">);</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkClass</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$class</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$class</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">social-network</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="k">switch</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">case</span> <span class="s2">&quot;blogger&quot;</span><span class="o">:</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkIcon</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">__S_ICONS__</span><span class="o">.</span><span class="s2">&quot;/blogger.png&quot;</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;Blogger&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="s2">&quot;facebook&quot;</span><span class="o">:</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkIcon</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">__S_ICONS__</span><span class="o">.</span><span class="s2">&quot;/facebook.png&quot;</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;Facebook&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="s2">&quot;linkedin&quot;</span><span class="o">:</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkIcon</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">__S_ICONS__</span><span class="o">.</span><span class="s2">&quot;/linkedin.png&quot;</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;LinkedIn&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="s2">&quot;rss&quot;</span><span class="o">:</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkIcon</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">__S_ICONS__</span><span class="o">.</span><span class="s2">&quot;/rss.png&quot;</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;RSS&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>      
+      <span class="k">case</span> <span class="s2">&quot;scribd&quot;</span><span class="o">:</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkIcon</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">__S_ICONS__</span><span class="o">.</span><span class="s2">&quot;/scribd.png&quot;</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;Scribd&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>  
+      <span class="k">case</span> <span class="s2">&quot;twitter&quot;</span><span class="o">:</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkIcon</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">__S_ICONS__</span><span class="o">.</span><span class="s2">&quot;/twitter.png&quot;</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;Twitter&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="s2">&quot;wordpress&quot;</span><span class="o">:</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkIcon</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">__S_ICONS__</span><span class="o">.</span><span class="s2">&quot;/wordpress.png&quot;</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;WordPress&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="s2">&quot;youtube&quot;</span><span class="o">:</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkIcon</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">__S_ICONS__</span><span class="o">.</span><span class="s2">&quot;/youtube.png&quot;</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;YouTube&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>  
+    <span class="p">}</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavSocialLink</span><span class="p">[]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nb">sprintf</span><span class="p">(</span><span class="s2">&quot;&lt;li%s&gt;&lt;a rel=</span><span class="se">\&quot;</span><span class="s2">external</span><span class="se">\&quot;</span><span class="s2"> href=</span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2">&gt;&lt;img src=</span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2"> alt=</span><span class="se">\&quot;</span><span class="s2">Follow us on %s</span><span class="se">\&quot;</span><span class="s2"> /&gt;&lt;/a&gt;&lt;/li&gt;&quot;</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkClass</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkHref</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkIcon</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkType</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavSocialLink</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  @method: topEmailLink($str, $href, $class)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $str</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $href</span>
+<span class="cm"> *  @param string $href</span>
+<span class="cm"> *  @var default param: #</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $class</span>
+<span class="cm"> *  @param string $class</span>
+<span class="cm"> *  @var default param: &#39;email&#39;</span>
+<span class="cm"> *</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">topEmailLink</span><span class="p">(</span><span class="nv">$str</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$href</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$class</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$str</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkHref</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">stripHTTP</span><span class="p">(</span><span class="nv">$href</span><span class="p">);</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkClass</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$class</span> <span class="o">!=</span> <span class="k">NULL</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$class</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">social-network</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topEmailLink</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nb">sprintf</span><span class="p">(</span><span class="s2">&quot;&lt;li%s&gt;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2"> title=</span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2">&gt;&lt;img src=</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="nx">__S_ICONS__</span><span class="o">.</span><span class="s2">&quot;/icon-email.png</span><span class="se">\&quot;</span><span class="s2"> alt=</span><span class="se">\&quot;</span><span class="s2">%s</span><span class="se">\&quot;</span><span class="s2">&gt;&lt;/a&gt;&lt;/li&gt;&quot;</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkClass</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkHref</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topEmailLink</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  Method for building out the top navigation on the page</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">topNav</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_topNavBuild</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  PRIVATE METHODS FOR TOP NAV</span>
+<span class="cm">*/</span>
+  <span class="k">private</span> <span class="k">function</span> <span class="nf">_topNavBuild</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nv">$i</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="mi">3</span><span class="p">;</span> <span class="c1">// offset default items</span>
+    <span class="nv">$j</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="mi">2</span><span class="p">;</span> <span class="c1">// offset default items</span>
+    <span class="nv">$topNavLink</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavLink</span><span class="p">);</span>
+    <span class="nv">$topNavStop</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="p">(</span><span class="nb">count</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavLink</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span></pre></div>             </td>           </tr>                               <tr id="section-4">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-4">&#182;</a>               </div>               <p>$topNavSocialLink = (int) count($this->topNavSocialLink);
+$this->topNavBuild = (string) "\r\n\t\t\t\t\t<ul>";</p>             </td>             <td class="code">               <div class="highlight"><pre>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavBuild</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nv">$topNavLink</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">&lt;</span> <span class="nv">$topNavStop</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavBuild</span> <span class="o">.=</span>  <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavLink</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nv">$toReplace</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">right-split</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">;</span>
+        <span class="nv">$replaceWith</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot; class=</span><span class="se">\&quot;</span><span class="s2">split</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">;</span>
+        <span class="nv">$emptyClass</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="nv">$toReplace</span><span class="p">,</span> <span class="nv">$replaceWith</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavLink</span><span class="p">[</span><span class="nv">$i</span><span class="p">]);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavBuild</span> <span class="o">.=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="s2">&quot;</span><span class="se">\r\n\t\t\t\t\t\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="nv">$emptyClass</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-5">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-5">&#182;</a>               </div>               <p>for ($j; $j &lt; $topNavSocialLink; $j++) {
+$this->topNavBuild .=  "\r\n\t\t\t\t\t\t".$this->topNavSocialLink[$j];
+}
+$this->topNavBuild .= (string) "\r\n\t\t\t\t\t\t".$this->topEmailLink;
+$this->topNavBuild .= (string) "\r\n\t\t\t\t\t</ul>";</p>             </td>             <td class="code">               <div class="highlight"><pre>    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">topNavBuild</span><span class="p">;</span>    
+  <span class="p">}</span>
+
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  LEFT NAV METHODS</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">groupItems</span><span class="p">(</span><span class="nv">$callPage</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">groupItems</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$callPage</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">groupItems</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  LEFT HAND NAVIGATION</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @method: leftNavItem($group, $str, $href)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $group</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $str</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $href</span>
+<span class="cm"> *  @param string $href</span>
+<span class="cm"> *  @var default param: #</span>
+<span class="cm"> *</span>
+<span class="cm"> *  REQUIRED</span>
+<span class="cm"> *  ORDER NUMBER 3</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">leftNavItem</span><span class="p">(</span><span class="nv">$group</span><span class="p">,</span> <span class="nv">$str</span><span class="p">,</span> <span class="nv">$href</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">,</span> <span class="nv">$external</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">groupStr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$group</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$str</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkHref</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">stripHTTP</span><span class="p">(</span><span class="nv">$href</span><span class="p">);</span></pre></div>             </td>           </tr>                               <tr id="section-6">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-6">&#182;</a>               </div>               <p>@TODO add fix null href and generate slug from str</p>             </td>             <td class="code">               <div class="highlight"><pre>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">leftNavItem</span><span class="p">[</span><span class="s2">&quot;</span><span class="si">$this-&gt;groupStr</span><span class="s2">&quot;</span><span class="p">][]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s2">&quot;item&quot;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span><span class="p">,</span> <span class="s2">&quot;slug&quot;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkHref</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">leftNavItem</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  PRIVATE METHODS FOR LEFT NAV</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">leftNav</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_leftNavBuild</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  PRIVATE METHODS FOR LEFT NAV</span>
+<span class="cm">*/</span>
+
+
+
+  <span class="k">private</span> <span class="k">function</span> <span class="nf">_itemLink</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$href</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$href</span> <span class="o">==</span> <span class="nb">pathinfo</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SCRIPT_NAME&#39;</span><span class="p">],</span> <span class="nx">PATHINFO_BASENAME</span><span class="p">))</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="si">$href</span><span class="se">\&quot;</span><span class="s2"> class=</span><span class="se">\&quot;</span><span class="s2">active</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="si">$text</span><span class="s2">&lt;/a&gt;&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="si">$href</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="si">$text</span><span class="s2">&lt;/a&gt;&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">private</span> <span class="k">function</span> <span class="nf">_leftNavBuild</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nv">$navGroup</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">leftNavItem</span><span class="p">[</span><span class="s2">&quot;</span><span class="si">$this-&gt;groupItems</span><span class="s2">&quot;</span><span class="p">];</span>
+    <span class="nb">ob_start</span><span class="p">();</span>
+    <span class="k">echo</span> <span class="s2">&quot;&lt;nav id=</span><span class="se">\&quot;</span><span class="s2">section-nav</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$navGroup</span> <span class="k">as</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
+
+      <span class="nv">$text</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">];</span>
+      <span class="nv">$href</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="s1">&#39;slug&#39;</span><span class="p">];</span></pre></div>             </td>           </tr>                               <tr id="section-7">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-7">&#182;</a>               </div>               <p>First item is the category name</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">if</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;h2&gt;</span><span class="si">$text</span><span class="s2">&lt;/h2&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-8">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-8">&#182;</a>               </div>               <p>If href is blank and we're on item 2, it's a subhead</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">elseif</span> <span class="p">(</span><span class="nv">$href</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="o">&amp;&amp;</span> <span class="nv">$i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;h3&gt;</span><span class="si">$text</span><span class="s2">&lt;/h3&gt;</span><span class="se">\n</span><span class="s2">&lt;ul class=</span><span class="se">\&quot;</span><span class="s2">tabs</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span> </pre></div>             </td>           </tr>                               <tr id="section-9">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-9">&#182;</a>               </div>               <p>If href isn't blank and we're on item 2, start the nav list</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">elseif</span> <span class="p">(</span><span class="nv">$href</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span> <span class="o">&amp;&amp;</span> <span class="nv">$i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;ul class=</span><span class="se">\&quot;</span><span class="s2">tabs</span><span class="se">\&quot;</span><span class="s2">&gt;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_itemLink</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$href</span><span class="p">)</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-10">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-10">&#182;</a>               </div>               <p>End the latest list and spit out a subhead</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">elseif</span> <span class="p">(</span><span class="nv">$href</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="o">&amp;&amp;</span> <span class="nv">$i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;/ul&gt;</span><span class="se">\n</span><span class="s2">&lt;h3&gt;</span><span class="si">$text</span><span class="s2">&lt;/h3&gt;</span><span class="se">\n</span><span class="s2">&lt;ul class=</span><span class="se">\&quot;</span><span class="s2">tabs</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span> </pre></div>             </td>           </tr>                               <tr id="section-11">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-11">&#182;</a>               </div>               <p>Last nav item</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">elseif</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$navGroup</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_itemLink</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$href</span><span class="p">)</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;</span><span class="se">\n</span><span class="s2">&lt;/ul&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span> </pre></div>             </td>           </tr>                               <tr id="section-12">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-12">&#182;</a>               </div>               <p>All other items</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">else</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_itemLink</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$href</span><span class="p">)</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
+
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="s2">&quot;&lt;/nav&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$nav</span> <span class="o">=</span> <span class="nb">ob_get_clean</span><span class="p">();</span>
+    <span class="k">return</span> <span class="nv">$nav</span><span class="p">;</span>
+  <span class="p">}</span>
+
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  END METHODS</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm">*/</span>
+<span class="sd">/**</span>
+<span class="sd">  NavTree class generates top and left menus with the addNode function.</span>
+<span class="sd">  Menu style options will include accordian and dropdown.</span>
+<span class="sd">  More documentation forthcoming.</span>
+<span class="sd">*/</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">NavTree</span> <span class="k">extends</span> <span class="nx">Menu</span> <span class="p">{</span>
+
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">groupItems</span><span class="p">(</span><span class="nv">$callPage</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">groupItems</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$callPage</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">groupItems</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">leftNav</span><span class="p">(</span><span class="nv">$style</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_flatTree</span><span class="p">(</span><span class="nv">$style</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">topNav</span><span class="p">(</span><span class="nv">$style</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_nestedTree</span><span class="p">(</span><span class="nv">$style</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="sd">/**</span>
+<span class="sd">  Stub for new addNode function. Combines functionality of Menu&#39;s topNavLink and leftHandItem</span>
+<span class="sd">*/</span>
+<span class="cm">/*  function addNode(array $array){</span>
+
+<span class="cm">//DIVIDER</span>
+<span class="cm">    $args = array(&#39;group&#39;, &#39;str&#39;, &#39;slug&#39;, &#39;ext&#39;, &#39;class&#39;, &#39;ga&#39;, &#39;lvl&#39;);</span>
+<span class="cm">    foreach($args as $arg){</span>
+<span class="cm">      $$arg = array_key_exists($arg, $array)? $array[$arg]:null;</span>
+<span class="cm">    }</span>
+
+<span class="cm">//DIVIDER</span>
+<span class="cm">  }</span>
+<span class="cm">*/</span>
+<span class="cm">/*</span>
+<span class="cm"> ***************************************************************************</span>
+<span class="cm"> *  LEFT HAND NAVIGATION</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @method: addNode($group, $str, $href)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $group</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $str</span>
+<span class="cm"> *  @param string $str</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @var $href</span>
+<span class="cm"> *  @param string $href</span>
+<span class="cm"> *  @var default param: #</span>
+<span class="cm"> *</span>
+<span class="cm"> *  REQUIRED</span>
+<span class="cm"> *  ORDER NUMBER 3</span>
+<span class="cm">*/</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">addNode</span><span class="p">(</span><span class="nv">$group</span><span class="p">,</span> <span class="nv">$str</span><span class="p">,</span> <span class="nv">$href</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">groupStr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$group</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nv">$str</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkHref</span> <span class="o">=</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">stripHTTP</span><span class="p">(</span><span class="nv">$href</span><span class="p">);</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">nodes</span><span class="p">[</span><span class="s2">&quot;</span><span class="si">$this-&gt;groupStr</span><span class="s2">&quot;</span><span class="p">][]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s2">&quot;item&quot;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkStr</span><span class="p">,</span> <span class="s2">&quot;slug&quot;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linkHref</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">nodes</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">private</span> <span class="k">function</span> <span class="nf">_nodeLink</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$href</span><span class="p">)</span> <span class="p">{</span></pre></div>             </td>           </tr>                               <tr id="section-13">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-13">&#182;</a>               </div>               <p>hacky way to emulate named parameters with PHP</p>             </td>             <td class="code">               <div class="highlight"><pre>    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;QUERY_STRING&#39;</span><span class="p">]))</span> <span class="p">{</span>
+      <span class="nv">$category</span> <span class="o">=</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SCRIPT_NAME&#39;</span><span class="p">];</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nv">$uri_clean</span> <span class="o">=</span> <span class="nb">ltrim</span><span class="p">(</span><span class="nb">str_replace</span><span class="p">(</span><span class="s2">&quot;.php?q=&quot;</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_URI&#39;</span><span class="p">]),</span> <span class="s2">&quot;/&quot;</span><span class="p">);</span>
+      <span class="nv">$uri_split</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">,</span> <span class="nv">$uri_clean</span><span class="p">);</span>
+      <span class="nv">$slug</span> <span class="o">=</span> <span class="nv">$uri_split</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="s2">&quot;/&quot;</span><span class="o">.</span><span class="nv">$uri_split</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+      <span class="nv">$category</span> <span class="o">=</span> <span class="nv">$uri_split</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="s2">&quot;.php&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$href</span> <span class="o">==</span> <span class="nv">$slug</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="si">{</span><span class="nv">$category</span><span class="si">}</span><span class="s2">?q=</span><span class="si">$href</span><span class="se">\&quot;</span><span class="s2"> class=</span><span class="se">\&quot;</span><span class="s2">active</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="si">$text</span><span class="s2">&lt;/a&gt;&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="si">{</span><span class="nv">$category</span><span class="si">}</span><span class="s2">?q=</span><span class="si">$href</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="si">$text</span><span class="s2">&lt;/a&gt;&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">private</span> <span class="k">function</span> <span class="nf">_flatTree</span><span class="p">()</span> <span class="p">{</span>
+    <span class="sd">/**</span>
+<span class="sd">    Need to make accordian-specific classes conditional</span>
+<span class="sd">    */</span>
+    <span class="nv">$navGroup</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">nodes</span><span class="p">[</span><span class="s2">&quot;</span><span class="si">$this-&gt;groupItems</span><span class="s2">&quot;</span><span class="p">];</span>
+    <span class="nb">ob_start</span><span class="p">();</span>
+    <span class="k">echo</span> <span class="s2">&quot;&lt;nav id=</span><span class="se">\&quot;</span><span class="s2">section-nav</span><span class="se">\&quot;</span><span class="s2"> class=</span><span class="se">\&quot;</span><span class="s2">acc</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$navGroup</span> <span class="k">as</span> <span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
+
+      <span class="nv">$text</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">];</span>
+      <span class="nv">$href</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="s1">&#39;slug&#39;</span><span class="p">];</span></pre></div>             </td>           </tr>                               <tr id="section-14">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-14">&#182;</a>               </div>               <p>construct node array here</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">if</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;h2&gt;</span><span class="si">$text</span><span class="s2">&lt;/h2&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-15">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-15">&#182;</a>               </div>               <p>Do we need to parse a query string?</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">elseif</span> <span class="p">(</span><span class="nv">$href</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="o">&amp;&amp;</span> <span class="nv">$i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;h3&gt;&lt;span class=</span><span class="se">\&quot;</span><span class="s2">acc-icon acc-icon-tri-c</span><span class="se">\&quot;</span><span class="s2">&gt;&lt;/span&gt;</span><span class="si">$text</span><span class="s2">&lt;/h3&gt;</span><span class="se">\n</span><span class="s2">&lt;ul class=</span><span class="se">\&quot;</span><span class="s2">tabs</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span> </pre></div>             </td>           </tr>                               <tr id="section-16">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-16">&#182;</a>               </div>               <p>First item is the category name</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">elseif</span> <span class="p">(</span><span class="nv">$href</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span> <span class="o">&amp;&amp;</span> <span class="nv">$i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;ul class=</span><span class="se">\&quot;</span><span class="s2">tabs</span><span class="se">\&quot;</span><span class="s2">&gt;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_nodeLink</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$href</span><span class="p">)</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-17">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-17">&#182;</a>               </div>               <p>If href is blank and we're on item 2, it's a subhead</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">elseif</span> <span class="p">(</span><span class="nv">$href</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="o">&amp;&amp;</span> <span class="nv">$i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;/ul&gt;</span><span class="se">\n</span><span class="s2">&lt;h3&gt;&lt;span class=</span><span class="se">\&quot;</span><span class="s2">acc-icon acc-icon-tri-c</span><span class="se">\&quot;</span><span class="s2">&gt;&lt;/span&gt;</span><span class="si">$text</span><span class="s2">&lt;/h3&gt;</span><span class="se">\n</span><span class="s2">&lt;ul class=</span><span class="se">\&quot;</span><span class="s2">tabs</span><span class="se">\&quot;</span><span class="s2"> class=</span><span class="se">\&quot;</span><span class="s2">active</span><span class="se">\&quot;</span><span class="s2">&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span> </pre></div>             </td>           </tr>                               <tr id="section-18">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-18">&#182;</a>               </div>               <p>If href isn't blank and we're on item 2, start the nav list</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">elseif</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$navGroup</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_nodeLink</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$href</span><span class="p">)</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;</span><span class="se">\n</span><span class="s2">&lt;/ul&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span> </pre></div>             </td>           </tr>                               <tr id="section-19">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-19">&#182;</a>               </div>               <p>End the latest list and spit out a subhead</p>             </td>             <td class="code">               <div class="highlight"><pre>      <span class="k">else</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;li&gt;&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_nodeLink</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$href</span><span class="p">)</span><span class="o">.</span><span class="s2">&quot;&lt;/li&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
+
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="s2">&quot;&lt;/nav&gt;&quot;</span><span class="p">;</span>
+    <span class="nv">$nav</span> <span class="o">=</span> <span class="nb">ob_get_clean</span><span class="p">();</span>
+    <span class="k">return</span> <span class="nv">$nav</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">private</span> <span class="k">function</span> <span class="nf">_nestedTree</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cm">/* End of file menu.inc.php */</span>
+<span class="cm">/* Location: system/classes/menu.inc.php */</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+
+</pre></div>             </td>           </tr>                               <tr id="section-20">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-20">&#182;</a>               </div>               <p>Last nav item</p>             </td>             <td class="code">               <div class="highlight"><pre>undefined</pre></div>             </td>           </tr>                               <tr id="section-21">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-21">&#182;</a>               </div>               <p>All other items</p>             </td>             <td class="code">               <div class="highlight"><pre>undefined</pre></div>             </td>           </tr>                </tbody>     </table>   </div> </body> </html> 

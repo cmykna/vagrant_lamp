@@ -1,0 +1,79 @@
+/*
+ ***************************************************************************
+ *	Microsite Images CSS
+ ***************************************************************************
+*/
+
+.image-center, .image-center-lb, .video-center-lb  {
+	display: block;
+	margin: 8px auto 12px;
+	height: auto;
+	min-height: 25px;
+	max-height: 300px;
+	width: auto;
+	min-width: 25px;
+	max-width: 912px;
+}
+
+.video-center {
+	display: block;
+	margin: 8px auto 12px;
+	height: auto;
+	width: auto;
+	min-width: 25px;
+	max-width: 912px;
+}
+
+.image-left, .image-left-lb, .image-left-lb-s2l, .video-left-lb {
+	display: block;
+	margin: 8px 18px 24px 1px;
+	float: left;
+	height: auto;
+	min-height: 25px;
+	max-height: 300px;
+	width: auto;
+	min-width: 25px;
+	max-width: 340px;	
+}
+
+.image-right, .image-right-lb, .image-right-lb-s2l, .video-right-lb {
+	display: block;
+	margin: 8px 1px 24px 18px;
+	float: right;
+	height: auto;
+	min-height: 25px;
+	max-height: 300px;
+	width: auto;
+	min-width: 25px;
+	max-width: 340px;		
+}
+
+.lb-indicator {
+	display: block;
+	height: 51px;
+	width: 64px;
+	position: absolute;
+	left: auto;
+	top: auto;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+.image-right-rep, .image-left-rep {
+	margin-bottom: 10px;	
+}
+
+.product-page-content .image-right {
+	background-color: #f8f8f8;
+	padding: 9px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 9px 9px;
+	-moz-border-radius: 9px 9px;
+	border-radius: 9px 9px;
+	box-shadow: 0 0 1px #ddd, inset 0 1px 0 #fff;
+}
+
+.virtual-sampling-page-content .image-right {
+	
+}

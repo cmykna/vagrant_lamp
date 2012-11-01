@@ -1,0 +1,86 @@
+/*
+ ***************************************************************************
+ *	Microsite Buckets
+ ***************************************************************************
+*/
+
+.three-space-bucket {
+	height: 154px;
+	width: 960px;
+}
+
+	.three-space-bucket li {
+		display: block;
+		background-color: #e8e8e8;
+			background-image: -webkit-gradient(linear, left top, left bottom, to(#efefef), from(#d5d5d5));
+			background-image: -webkit-linear-gradient(top, #efefef, #d5d5d5);
+			background-image: -moz-linear-gradient(top, #efefef, #d5d5d5);
+			background-image: -o-linear-gradient(top, #efefef, #d5d5d5);
+			background-image: -ms-linear-gradient(top, #efefef, #d5d5d5);
+			background-image: linear-gradient(top, #efefef, #d5d5d5);
+		margin: 16px 6px 0;
+		float: left;
+		height: 130px;
+		width: 306px;
+		border: 1px solid #d5d5d5;
+			-webkit-border-radius: 12px 12px;
+			-moz-border-radius: 12px 12px;
+			border-radius: 12px 12px;
+		list-style-type: none;
+		list-style-position: outside;
+		overflow: hidden;
+		position: relative;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#efefef', EndColorStr='#d5d5d5', GradientType=0);
+	}
+	
+		* html .three-space-bucket li {
+			margin: 16px 8px 0 3px;
+		}
+	
+		.three-space-bucket h3 {
+			/*font-size: 19px;*/
+			font-size: 1.462em;
+			font-family: "OfficinaSansITCW01-BdIt", Arial, Helvetica, sans-serif;
+			color: #000;
+			margin: 15px 0 0 17px; 
+			width: 270px;
+			z-index: 10;
+		}
+		
+			.three-space-bucket h3 em {
+				font-style: normal;
+				font-family: "OfficinaSansITCW01-Bold", Arial, Helvetica, sans-serif;
+			}
+		
+		.three-space-bucket p {
+			/*font-size: 12px;*/
+			font-size: 0.923em;
+			line-height: 1.3em;
+			font-family: Arial, Helvetica, sans-serif;
+			color: #454545;
+			margin: 8px 0 8px 17px;
+			width: 140px;
+			z-index: 10;
+		}
+		
+		.three-space-bucket li a.call-out-link {
+			/*font-size: 15px;*/
+			font-size: 1.154em;
+			font-family: "OfficinaSansITCW01-BdIt", Arial, Helvetica, sans-serif;
+			color: #0084c9;
+			background: transparent url(/system/assets/images/call-to-arrow.png) no-repeat right center;
+			padding-right: 15px;
+			position: absolute;
+			bottom: 16px;
+			left: 17px;
+			z-index: 10;
+		}
+
+		.three-space-bucket img {
+			height: 119px;
+			width: 138px;
+			position: absolute;
+			top: 6px;
+			right: 6px;
+			z-index: 0;
+		}

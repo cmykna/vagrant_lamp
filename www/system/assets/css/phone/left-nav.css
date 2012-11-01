@@ -1,0 +1,96 @@
+/*
+ ***************************************************************************
+ *	Microsite Secondary Nav CSS
+ ***************************************************************************
+*/
+
+#section-nav {
+	display: block;
+	background-color: #505050;
+	margin-bottom: 12px;
+	width: auto;
+	border: 2px solid #505050;
+		-webkit-border-radius: 6px 6px;
+	z-index: 10;
+}
+
+	#section-nav h2 {
+		font-weight: bold;
+		/*font-size: 15px;*/
+		font-size: 1.154em;
+		line-height: 1.3em;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #fff;
+			text-shadow: 1px 1px 1px #333;
+		background-color: #505050;
+			background-image: -webkit-gradient(linear, left top, left bottom, to(#666666), from(#505050));
+			background-image: -webkit-linear-gradient(top, #666666, #505050);
+		padding: 12px 18px;
+			-webkit-border-radius: 6px 6px 0 0;
+	}
+	
+	#section-nav h3 {
+		font-weight: bold;
+		/*font-size: 13px;*/
+		font-size: 1.154em;
+		line-height: 1.3em;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #464646;
+		background-color: #DADADA;
+		padding: 6px 18px 6px 23px;
+		border: 1px solid #BEBEBE;
+		border-right: 0 none;
+		border-left: 0 none;	
+	}
+	
+	#section-nav h3 .important {
+		color: #DC1900;
+	}
+	
+	#section-nav ul {
+		background-color: #F5F5F5;
+		margin: 0;
+		padding: 12px 0 0 0;
+	}
+	
+	#section-nav ul:last-child {
+		-webkit-border-radius: 0 0 3px 3px;
+	}
+	
+		#section-nav li {
+			display: block;
+			list-style-type: none;
+			list-style-position: outside;
+		}
+		
+		* html body #section-nav li {
+		}
+		
+		#section-nav li a {
+			/*font-size: 12px;*/
+			font-size: 1.154em;
+			line-height: 1.3em;
+			font-family: Arial, Helvetica, sans-serif;
+			color: #464646;
+			display: block;
+			margin: 0 18px 0 24px;
+			padding: 0 0 12px 0;
+		}
+		
+		#section-nav li a.active {
+			font-weight: bold;
+			color: #000;
+		}
+		
+		#section-nav li hr {
+			color: #DADADA;
+			display: block;
+			background-color: #DADADA;
+			margin: 0 14px 12px 14px;
+			padding: 0;
+			height: 1px;
+			border: 0 none;
+		}
+		
+		* html body #section-nav li hr {
+		}

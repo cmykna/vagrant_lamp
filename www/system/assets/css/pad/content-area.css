@@ -1,0 +1,270 @@
+/*
+ ***************************************************************************
+ *	Microsite Content Layout CSS
+ ***************************************************************************
+*/
+	#container {
+		width: 960px;
+	}
+	
+	#content-area {
+		width: 960px;
+	}
+	
+	#content-two-col {
+		width: 960px;
+	}
+	
+	#content-two-col {
+		padding: 0;
+		overflow: visible;
+		z-index: 0;
+	}
+	
+		#content-two-col #col-one {
+			margin-right: 0;
+			margin-left: -245px;
+			float: right;
+			width: auto; /*100%*/
+		}
+			/*24px*/
+			#content-two-col #col-one #content {
+				/*margin-left: 270px;*/
+				width: 690px; /*690px*/
+			}
+	
+	#content-two-col #col-two {
+		float: left;
+		width: 240px;
+		z-index: 10;
+	}
+	
+	* html body #content-two-col #col-two {
+		display: inline;
+		margin-left: 0;
+	}
+	
+	#container #content {
+		margin: 0 auto;
+	}
+	
+/*
+ ***************************************************************************
+ *	Microsite Content Area CSS
+ ***************************************************************************
+*/
+
+.buffer {
+	margin: 12px 0;
+}
+
+#container #content .buffer {
+	margin: 12px 22px;
+}
+
+	.buffer h1 {
+		/*font-size: 26px;*/
+		font-size: 2em;
+		line-height: 1.3em;
+		font-family: "Avenir LT W01 65 Medium", Arial, Helvetica, sans-serif;
+		color: #DC1900;
+		margin-top: 12px;
+	}
+	
+		.buffer h1 a, .buffer h1 em {
+			font-style: normal;
+			font-family: "AvenirLTW01-65MediumObl", Arial, Helvetica, sans-serif;	
+		}
+	
+	.buffer h1 a, .buffer h2 a, .buffer h3 a {
+		color: #0084c9;
+	}
+	
+	.buffer h2 {
+		/*font-size: 21px;*/
+		font-size: 1.615em;
+		line-height: 1.3em;
+		font-family: "OfficinaSansITCW01-BdIt", Arial, Helvetica, sans-serif;
+		color: #000;
+		margin-top: 24px;
+		margin-bottom: 6px;
+	}
+	
+		.buffer h2 sup {
+			vertical-align: top;	
+		}
+	
+		.buffer h2 a, .buffer h2 em {
+			font-family: "OfficinaSansITCW01-Bold", Arial, Helvetica, sans-serif;
+		}
+	
+	.buffer h3 {
+		font-weight: bold;
+		/*font-size: 14px;*/
+		font-size: 1.077em;
+		line-height: 1.43em;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #454545;
+		display: compact;
+		margin-top: 8px;
+	}
+	
+	.buffer p {
+		/*font-size: 13px;*/
+		font-size: 1em;
+		line-height: 1.54em;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #454545;
+		margin: 8px 0;	
+	}
+	
+	.buffer sup {
+		font-size: .76em;
+		vertical-align: super;	
+	}
+	
+	.buffer p a, .buffer li a, .buffer .toc, .buffer .email {
+		/*font-size: 14px;*/
+		font-size: 1.077em;
+		font-family: "OfficinaSansITCW01-BdIt", Arial, Helvetica, sans-serif;
+		color: #0084C9;
+	}
+	
+	.buffer p a em, .buffer li a em {
+		font-family: "OfficinaSansITCW01-Bold", Arial, Helvetica, sans-serif;
+	}
+	
+	.buffer ul, .buffer ol, .buffer ul.half-width, .buffer ol.half-width {
+		/*font-size: 13px;*/
+		font-size: 1em;
+		line-height: 1.54em;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #454545;
+		display: inline-block;
+		margin: 8px 0;
+	}
+	
+	.buffer ul.half-width, .buffer ol.half-width {
+		width: 400px;
+	}
+	
+	.buffer ul li {
+		/*display: list-item;*/
+		margin-left: 22px;
+		padding: 4px 0;
+		/*width: 100%;*/
+		/*list-style-type: disc;*/
+		list-style-position: outside;
+	}
+	
+	.buffer ol li {
+		/*display: list-item;*/
+		margin-left: 27px;
+		padding: 4px 0;
+		/*width: 100%;*/
+		list-style-type: decimal;
+		list-style-position: outside;
+	}
+	
+		.buffer ol ol {
+			display: block;
+			margin: 0;
+		}
+		
+			.buffer ol ol li {
+				padding: 0;
+				list-style-type: lower-alpha;
+			}
+		
+				.buffer ol ol ol {
+					display: block;
+					margin: 0;
+				}
+				
+					.buffer ol ol ol li {
+						list-style-type: lower-roman;
+						padding: 0;
+					}
+	
+	.buffer .disclaimer {
+		letter-spacing: .1em;	
+	}
+	
+	.buffer .right-align {
+		float: right;
+		clear: right;
+		height: 74px;
+	}
+	
+	.buffer .team-rep-right {
+		text-align: center;
+		display: inline-block;
+		margin: 8px 1px 24px 18px;
+		float: right;
+		width: 180px;
+		min-width: 180px;
+		max-width: 180px;
+	}
+	
+	.buffer .team-rep-left {
+		text-align: center;
+		display: inline-block;
+		margin: 24px 18px 24px 1px;
+		float: left;
+		width: 180px;
+		min-width: 180px;
+		max-width: 180px;
+	}
+	
+	.buffer .book-list {
+		display: inline-block;
+		background-color: #EBEBEB;
+		margin: 24px 1px 24px 18px;
+		padding: 4px 0;
+		float: right;
+		width: 180px;
+		min-width: 180px;
+		max-width: 180px;
+		-webkit-border-radius: 6px 6px;
+		-moz-border-radius: 6px 6px;
+		border-radius: 6px 6px;
+	}
+	
+		.buffer .book-list li {
+			margin: 0 6px;
+			padding: 2px 0;
+			list-style-type: none;	
+			list-style-position: outside;
+		}
+		
+/*
+ ***************************************************************************
+ *	Microsite Product Landing Page CSS
+ ***************************************************************************
+*/
+
+.product-page-content, .virtual-sampling-page-content {
+	margin-top: 24px;	
+}
+
+.product-page-content h1 a {
+	color: #787878;
+	background: url(/system/assets/images/program-h1-arrow.png) no-repeat right center;
+	margin-right: 5px;
+	padding-right: 30px;
+}
+
+.program-item {
+	margin: 28px 9px;
+	float: left;
+	height: 185px;
+	width: 432px;
+	position: relative;
+}
+
+.program-item .image-left {
+	border: 1px solid #ccc;
+	-webkit-border-radius: 18px 18px;
+	-moz-border-radius: 18px 18px;
+	border-radius: 18px 18px;	
+}

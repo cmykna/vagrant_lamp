@@ -1,0 +1,124 @@
+/*
+ ***************************************************************************
+ *	Footer Elems
+ ***************************************************************************
+*/
+
+.trademark-credits {
+	/*font-size: 10px;*/
+	font-size: 0.769em;
+	line-height: 1.54em;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #454545;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	padding: 40px 0 0;
+	width: 960px;
+	clear: both;
+}
+
+	.trademark-credits sup {
+		font-size: .8em;
+		vertical-align: super;	
+	}
+	
+	.trademark-credits a {
+		color: #454545;
+	}
+
+#footer {
+	margin: 0 auto;
+	padding-top: 40px;
+	width: 960px;
+	clear: both;
+}
+
+	#footer ul {
+		text-align: center;
+	}
+	
+		#footer li {
+			font-family: Arial, Helvetica, sans-serif;
+			display: inline;
+			list-style-type: none;
+		}
+		
+	#contact {
+		margin-bottom: 6px;
+	}
+		
+		#contact li {
+			text-align: center;
+			padding: 0 10px 0 6px;
+		}
+		
+		#contact li:first-child {
+			border-right: 1px solid #999;
+		}
+		
+			#contact li a {
+				font-weight: bold;
+				font-size: 0.923em;
+				color: #666;
+			}
+		
+	#terms-copyright {
+		margin-top: 6px;
+		padding-bottom: 40px;
+	}
+	
+		#terms-copyright li {
+			font-size: 0.846em;
+			color: #999;
+			padding: 0 18px 0 0;
+		}
+		
+			#terms-copyright li a {
+				color: #999;
+			}
+			
+	.time {
+		/*font-size: 10px;*/
+		font-size: 0.769em;
+		line-height: 1.54em;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #fff;
+		text-align: center;
+		margin: 0 auto 40px;
+		width: 960px;
+	}
+	
+	#toTop {
+		text-decoration: none;
+		text-indent: -999px;
+		display: none;
+		background: url(/system/assets/images/ui.totop.png) no-repeat left top;
+		height: 51px;
+		width: 51px;
+		border: none;
+		overflow: hidden;
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+		z-index: 10;
+	}
+	
+	#toTopHover {
+		display: block;
+		background: url(/system/assets/images/ui.totop.png) no-repeat left -51px;
+		float: left;
+		height: 51px;
+		width: 51px;
+		overflow: hidden;
+		opacity: 0;
+		-moz-opacity: 0;
+		-ms-filter: "alpha(opacity=0)";
+		filter: alpha(opacity=0);
+		filter: "progid:DXImageTransform.Microsoft.alpha(opacity=0)";
+	}
+	
+	#toTop:active,
+	#toTop:focus {
+		outline: none;
+	}

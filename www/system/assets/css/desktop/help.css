@@ -1,0 +1,106 @@
+/*
+ ***************************************************************************
+ *	Help Elems
+ ***************************************************************************
+*/
+
+.prettyprint {
+	background-color: #fafafa;
+	display: inline-block;
+	white-space: pre;
+	margin-bottom: 10px;
+	padding: 20px;
+	height: auto;/*640px;*/
+	min-height: 100px;
+	max-height: 768px;
+	width: 645px;
+	overflow: auto;
+	z-index: 0
+}
+
+	* html body .prettyprint {
+		width: 630px;
+	}
+	
+	.prettyprint li, .prettyprint span {
+		/*font-size: 14px;*/
+		font-size: 1.077em;
+		line-height: 1.3em;
+		font-family: "Courier New", Courier, monospace;		
+	}
+
+	.prettyprint .linenums, .prettyprint .linenums li {
+		width: 100%;	
+	}
+	
+		.prettyprint .linenums li {
+			white-space: nowrap;
+			margin-left: 36px;
+			list-style-type: decimal;
+		}
+
+#help h1 {
+	margin-bottom: 15px;	
+}
+
+#help .toc {
+	display: block;
+	margin-bottom: 36px;
+	width: 100%;
+}
+
+#help .toc li {
+	width: 100%;
+}
+
+.development-help {
+	background-color: transparent;
+	margin: 12px 0;
+	padding: 0;
+	width: 685px;
+	border: 0 none;
+}
+
+.development-help td {
+	color: #000;
+	text-align: left;
+	vertical-align: text-top;
+	margin: 0;
+	padding: 6px 18px;
+	border: 1px solid #505050;
+}
+
+	.development-help td li {
+		color: #000;	
+	}
+
+	.development-help td a {
+		font-weight: bold;
+		color: #000;
+		text-decoration: none;
+	}
+	
+		.development-help td a:hover {
+			text-decoration: underline;
+		}
+
+.development-help .odd {
+	background-color: #DADADA !important;	
+}
+
+.development-help tr:nth-child(odd) {
+	background-color: #DADADA !important;	
+}
+
+.development-help .even {
+	background-color: #F5F5F5 !important;
+}
+
+.development-help tr:nth-child(even) {
+	background-color: #F5F5F5 !important;
+}
+
+.development-help td:first-child {
+	white-space: nowrap !important;
+	width: auto !important;	
+}

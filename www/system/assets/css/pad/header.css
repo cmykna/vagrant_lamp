@@ -1,0 +1,194 @@
+/*
+ ***************************************************************************
+ *	Header CSS
+ *	Misc Header Elems
+ ***************************************************************************
+*/
+
+#development {
+	background-color: #FEEFDA;
+	width: 100%;
+	border: 1px solid #F7941D;
+	border-right: 0 none;
+	border-left: 0 none;
+	overflow: hidden;
+}
+	
+	#development p {
+		/*font: 13px/19px Arial, Helvetica, sans-serif;*/
+		font: 1em/1.462em Arial, Helvetica, sans-serif;
+		color: #333;
+		margin: 0 auto;
+		padding: 12px;
+		width: 936px;
+	}
+	
+		#development a {
+			color: #0084C9;
+		}
+
+.error-report, #no-javascript {
+	/*font: 13px/19px Arial, Helvetica, sans-serif;*/
+	font: 1em/1.462em Arial, Helvetica, sans-serif;
+	background-color: #ffcccc;
+	width: 100%;
+	border: 1px solid #cc0033;
+	border-right: 0px none;
+	border-left: 0px none;
+	overflow: hidden;
+}
+
+	.error-report h1, .error-report h2 {
+		/*font-size: 24px;*/
+		font-size: 1.846em;
+		font-family: "Avenir LT W01 65 Medium", Arial, Helvetica, sans-serif;
+		margin: 0 auto 0;
+		padding-top: 20px;
+		width: 960px;
+	}
+	
+	.error-report h2 {
+		margin-top: -1px;
+		border-top: 1px solid #cc0033;
+	}
+	
+	.error-report ul {
+		margin: 0 auto;
+		padding: 10px 0 20px;
+		width: 960px;
+	}
+
+	#no-javascript p {
+		color: #333;
+		margin: 0 auto;
+		padding: 12px;
+		width: 936px;
+	}
+
+/*
+ ***************************************************************************
+ *	Header Elems
+ ***************************************************************************
+*/	
+
+#brand {
+	background: url(/system/assets/images/branding-bg.gif) repeat-x left top;
+	height: 46px;
+	min-height: 46px;
+	max-height: 46px;
+	width: 100%;
+}
+
+	#brand-container {
+		margin: 0 auto;
+		width: 960px;
+	}
+	
+		#brand-container span {
+			display: block;
+			background: url(/system/assets/images/hmh-logo-new.gif) repeat-x 0 9px;
+			height: 43px;
+			width: 305px;
+			position: relative;
+			overflow: hidden;
+		}
+		
+			#brand-container span .logo {
+				display: block;
+				height: 93px;
+				width: 305px;
+				position: absolute;
+				left: 0;
+				top: -50px;
+			}
+	
+#background-wrapper {
+	display: block;
+	margin: 0 auto;
+	width: 960px;
+}
+
+	#header {
+		margin: 24px 6px 12px;
+		height: 96px;
+		width: 948px;
+		overflow: hidden;
+		position: relative;
+	}
+	
+		#program-logo {
+			height: auto;
+			min-height: 0;
+			max-height: 64px;
+			width: auto;
+			min-width: 0;
+			max-width: 468px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		
+		#program-state {
+			/*font-size: 24px;*/
+			font-size: 1.846em;
+			font-family: "Avenir LT W01 65 Medium", Arial, Helvetica, sans-serif;
+			color: #00A3DD;
+			position: absolute;
+			left: 0;
+			top: 36px;	
+		}
+		
+			#program-state a {
+				color: #00A3DD;
+			}
+
+	#top-nav {
+		height: 24px;
+	 	width: 948px;
+		position: absolute;
+	 	right: 0;
+		bottom: 6px;
+	 }
+	
+		#top-nav ul {
+			text-align: right;
+		 }
+		 
+			#top-nav li {
+				display: inline;
+				position: relative;
+			}
+			
+				.right-split {
+					margin: 0;
+					padding: 0 11px 0 9px;
+					border-right: 1px solid #d5d5d5;
+				}
+				
+				.split {
+					margin: 0;
+					padding: 0 5px 0 9px;
+				}
+				
+				.social-network {
+					display: block;
+					padding-left: 3px;
+					position: absolute;
+					top: 6px;
+				}
+				
+					.social-network img {
+						height: 24px;
+						min-height: 24px;
+						max-height: 24px;
+						width: 24px;
+						min-width: 24px;
+						max-width: 24px;
+					}
+				
+			#top-nav li a {
+				/*font-size: 15px;*/
+				font-size: 1.154em;
+				font-family: Arial, Helvetica, sans-serif;
+				color: #666;
+			}

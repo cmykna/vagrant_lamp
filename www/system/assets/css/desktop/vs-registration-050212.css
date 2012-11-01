@@ -1,0 +1,224 @@
+/*
+ ***************************************************************************
+ *	VS Registration CSS
+ ***************************************************************************
+*/
+.contact-form ol,
+.contact-form ol li {
+	display: block;
+	padding: 0;
+}
+
+.contact-form ol {
+	padding-bottom: 40px;
+}
+
+.contact-form ol,
+.contact-form ol li label {
+	background: #f2f2f2;
+}
+
+.contact-form ol {
+	margin: 18px auto 18px 0;
+	height: 600px;
+	width: 770px;
+	position: relative;
+	-webkit-border-radius: 12px 12px;
+	-moz-border-radius: 12px 12px;
+	border-radius: 12px 12px;
+}
+
+.contact-form ol,
+.contact-form ol li textarea,
+.contact-form ol li input,
+.contact-form ol li select {
+	border: 1px solid #d5d5d5;	
+}
+
+.contact-form ol li label,
+.contact-form ol li input,
+.contact-form ol li select,
+.contact-form ol li textarea {
+	position: absolute;
+}
+
+.contact-form ol li label,
+.contact-form ol li input,
+.contact-form ol li select {
+	left: 65px;
+}
+
+.contact-form ol li label {
+	top: 18px;
+}
+
+.contact-form ol li textarea,
+.contact-form ol li input,
+.contact-form ol li select {
+	-webkit-border-radius: 3px 3px;
+	-moz-border-radius: 3px 3px;
+	border-radius: 3px 3px;
+}
+
+.contact-form ol li {
+	margin: 0;
+	float: left;
+	height: 62px;
+	width: 335px;
+	list-style-type: none;
+	position: relative;
+}
+	
+.contact-form ol li input,
+.contact-form ol li select {
+	font-size: 15px;
+	width: 300px;
+	top: 40px;
+	color: #454545;
+}
+
+.contact-form .error textarea,
+.contact-form .error input,
+.contact-form .error select,
+.contact-form .error option {
+	background: #fde2de;
+	border: 1px solid #dc1900;
+}
+
+.contact-form .error label {
+	color: #DC1900;
+}
+
+.contact-form .valid textarea,
+.contact-form .valid input,
+.contact-form .valid select,
+.contact-form .valid option {
+	background: #dbffe4;
+	border: 1px solid #29a449;
+}
+
+.contact-form .valid label {
+	color: #29A449;
+}
+
+.contact-form #special-request {
+	/*float: right;*/
+	/*height: 534px;*/
+}
+
+.contact-form #special-request label {
+	left: 65px;	
+}
+
+.contact-form #special-request #C_Special_Requests1 {
+	height: 200px;
+	width: 633px;
+	top: 40px;
+	left: 65px;
+}
+
+.contact-form .text-area {
+	height: 120px;
+	position: relative;
+}
+	
+	.contact-form .text-area textarea {
+		height: 62px;
+		left: 10px;
+		width: 270px;
+		top: 40px;	
+	}
+
+	#Vs_registration ol {
+		height: 450px;
+	}
+	
+	.contact-form ol li label {
+		height: 22px;
+		width: 270px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	.supplementalField.notVisible {
+		visibility: hidden;
+	}
+	
+#olWrapper {
+	position: relative;
+}
+
+.right-align input.button {
+	position: absolute;
+	bottom: 30px;
+	right: 220px;
+	background: none;
+	height: auto;
+	width: auto;
+	border: 0 none;
+	-webkit-border-radius: 0 0;
+	-moz-border-radius: 0 0;
+	border-radius: 0 0;
+	-webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 1.0);
+	-moz-box-shadow: 0 0 0 rgba(255, 255, 255, 1.0);
+	box-shadow: 0 0 0 rgba(255, 255, 255, 1.0);
+	border-image: initial;
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F2F2F2', endColorstr='#F2F2F2'); /* IE6 & IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F2F2F2', endColorstr='#F2F2F2')"; /* IE8 */
+}
+
+ol.dynamic-form {
+	height: auto;
+	padding-bottom: 50px;
+}
+
+ol.dynamic-form textarea {
+	margin-left: 55px;
+	resize: none;
+}
+
+.contact-form .dynamic-form li {
+	padding-top: 20px;
+	float: none;
+	height: auto;
+	width: auto;
+}
+
+.contact-form .dynamic-form input[type="checkbox"] {
+	display: inline;
+	height: 14px;
+	width: 14px;
+	position: relative;
+	top: 0;
+	border: 0 none;
+}
+
+.contact-form .dynamic-form .checkbox label {
+	display: inline;
+	height: auto;
+	position: relative;
+	top: 2px;
+}
+.req {
+	font-size:.75em;
+	font-weight: normal;
+}
+.req:before {
+	content: "(";
+}
+.req:after {
+	content: ")";
+}
+.contact-form .disabled {
+	color: #bebebe;
+}
+
+.disabled select {
+	color: #bebebe !important;
+}
+
+.contact-form button {
+	position: absolute;
+	top: 250px;
+	right: -33px;
+}

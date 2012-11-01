@@ -1,0 +1,253 @@
+/*
+ ***************************************************************************
+ *	Header CSS
+ *	Misc Header Elems
+ ***************************************************************************
+*/
+
+#development {
+	background-color: #FEEFDA;
+	margin: 0;
+	width: 100%;
+	border: 1px solid #F7941D;
+	border-right: 0 none;
+	border-left: 0 none;
+	overflow: hidden;
+}
+	
+	#development p {
+		/*font: 13px/19px Arial, Helvetica, sans-serif;*/
+		font: 1em/1.462em Arial, Helvetica, sans-serif;
+		color: #333;
+		margin: 0;
+		padding: 12px 10px;
+		width: auto;
+	}
+	
+		#development a {
+			color: #0084C9;
+		}
+
+.error-report, #no-javascript {
+	/*font: 13px/19px Arial, Helvetica, sans-serif;*/
+	font: 1em/1.462em Arial, Helvetica, sans-serif;
+	background-color: #ffcccc;
+	margin: 0;
+	width: 100%;
+	border: 1px solid #cc0033;
+	border-right: 0px none;
+	border-left: 0px none;
+	overflow: hidden;
+}
+
+	.error-report h1, .error-report h2 {
+		/*font-size: 24px;*/
+		font-size: 1.846em;
+		font-family: "Avenir LT W01 65 Medium", Arial, Helvetica, sans-serif;
+		margin: 0;
+		padding: 20px 10px 0;
+		width: auto;
+	}
+	
+	.error-report h2 {
+		margin-top: -1px;
+		border-top: 1px solid #cc0033;
+	}
+	
+	.error-report ul {
+		margin: 0;
+		padding: 10px 10px 20px;
+		width: auto;
+	}
+
+	#no-javascript p {
+		color: #333;
+		margin: 0;
+		padding: 12px 10px;
+		width: auto;
+	}
+
+/*
+ ***************************************************************************
+ *	Header Elems
+ ***************************************************************************
+*/	
+
+#brand {
+	background: url(/system/assets/images/branding-bg.gif) repeat-x left top;
+	margin: 0;
+	height: 46px;
+	min-height: 46px;
+	max-height: 46px;
+	width: 100%;
+}
+
+	#brand-container {
+		margin: 0 0 0 5px;
+		width: 305px;
+	}
+	
+		#brand-container span {
+			display: block;
+			background: url(/system/assets/images/hmh-logo-new.gif) repeat-x 0 9px;
+			height: 43px;
+			width: 305px;
+			position: relative;
+			overflow: hidden;
+		}
+		
+			#brand-container span .logo {
+				display: block;
+				height: 93px;
+				width: 305px;
+				position: absolute;
+				left: 0;
+				top: -50px;
+			}
+			
+#search {
+	display: none;	
+}
+	
+#background-wrapper {
+	display: block;
+	margin: 0;
+	width: 100%;
+}
+
+	#header {
+		margin: 0 0 24px 0;
+		height: 76px; /* 96px */
+		width: 100%;
+		position: relative;
+	}
+	
+		#program-logo img {
+			height: auto;
+			margin-left: 10px;
+			max-height: 41px;
+			width: auto;
+			max-width: 300px;
+			/*position: relative;*/
+			left: 0;
+			top: 0;
+		}
+		
+		#program-state {
+			/*font-size: 24px;*/
+			font-size: 1.846em;
+			font-family: "Avenir LT W01 65 Medium", Arial, Helvetica, sans-serif;
+			color: #00A3DD;
+			margin-left: 10px;
+			padding-top: 10px;
+			padding-bottom: 13px;
+			/*position: relative;*/
+			left: 0;
+			top: 0;
+		}
+		
+			#program-state a {
+				color: #00A3DD;
+			}
+
+	#top-nav {
+		display: none;
+		margin-top: 8px;
+		/*margin-top: -16px;*/
+		margin-left: 10px;
+		float: left;
+		height: 24px;
+	 	width: 50px;
+		position: relative;
+		z-index: 999 !important;
+	 }
+	 
+	 	#top-nav li a, #top-nav li {
+			float: left;
+		}
+	
+		#top-nav ul {
+			margin: 0;
+			z-index: 999 !important;
+		 }
+		 
+			#top-nav li {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				list-style-position: outside;
+				position: relative;
+			}
+			
+				.right-split {
+				}
+				
+				.split {
+				}
+				
+				.social-network, #top-nav .email {
+					display: block;
+					padding-left: 3px;
+					position: absolute;
+					top: 6px;
+				}
+				
+					.social-network img, #top-nav .email img {
+						height: 24px;
+						min-height: 24px;
+						max-height: 24px;
+						width: 24px;
+						min-width: 24px;
+						max-width: 24px;
+					}
+				
+			#top-nav li a {
+				/*font-size: 15px;*/
+				font-size: 1.154em;
+				font-family: Arial, Helvetica, sans-serif;
+				color: #fff;
+				text-decoration: none; 
+				display: block;
+				background-color: #505050;
+				margin: 0;
+				padding: 3px 8px 4px;
+				border: 1px solid #505050;
+				-webkit-border-radius: 4px 4px;
+			}
+				
+		#top-nav li .sub-nav {
+			display: none;
+			background-color: #505050;
+			margin: 0;
+			padding: 6px 0;
+			width: 300px;
+			position: absolute;
+			top: 100%;
+			left: 0;
+		}
+		
+			#top-nav .sub-nav li {
+				margin: 0;
+				padding: 3px 4px;
+			}
+		
+			#top-nav .sub-nav li a {
+				font-size: 1.154em;
+				width: 274px;
+				border: 1px solid #505050;
+			}
+			
+	.social, #top-nav .email {
+		text-align: right;
+		margin-right: 10px;
+		float: right;
+		width: auto;
+		/*position: relative;*/
+		top: 0;
+		height: 24px;
+	}
+		
+		.social li, #top-nav .email {
+			display: inline;
+			position: relative;
+		}
