@@ -1,4 +1,4 @@
-LAMP development stack for hmhed. 
+LAMP development stack.
 
 * Clone repo
 * `vagrant up`
