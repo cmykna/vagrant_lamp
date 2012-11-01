@@ -1,2 +1,4 @@
 .DS_Store
 puppet/
+www/build/
+www/system/
